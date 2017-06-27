@@ -1,0 +1,22 @@
+﻿Build started 23.06.2017 21:09:26.
+     1>Project "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\trzecie2.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\kernel.cu" 
+     1>Project "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\trzecie2.vcxproj" (1) is building "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\trzecie2.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Rita\AppData\Local\Temp\tmp60bd47babae2468a9af8ecb58d014d42.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\kernel.cu"
+         
+         c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\kernel.cu" 
+     1>CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+         kernel.cu
+     1>Done Building Project "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\trzecie2.vcxproj" (CudaBuildCore target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\Debug\trzecie2.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\Debug\trzecie2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\Debug\trzecie2.lib" /MACHINE:X86 Debug\kernel.cu.obj
+     1>LINK : fatal error LNK1168: cannot open c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\Debug\trzecie2.exe for writing
+     1>Done Building Project "c:\Users\Rita\Documents\Visual Studio 2013\Projects\trzecie2\trzecie2\trzecie2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.66
